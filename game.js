@@ -1,12 +1,12 @@
 $( document ).ready(function(){
-    var Random=Math.floor(Math.random()*101+18)
+    var Random=Math.floor(Math.random()*101+18);
     
     $('#randomNumber').text(Random);
     
-    var num1= Math.floor(Math.random()*11+1)
-    var num2= Math.floor(Math.random()*11+1)
-    var num3= Math.floor(Math.random()*11+1)
-    var num4= Math.floor(Math.random()*11+1)
+    var num1= Math.floor(Math.random()*11+1);
+    var num2= Math.floor(Math.random()*11+1);
+    var num3= Math.floor(Math.random()*11+1);
+    var num4= Math.floor(Math.random()*11+1);
     
     var userTotal= 0; 
     var wins= 0;
@@ -17,7 +17,7 @@ $( document ).ready(function(){
   
   function reset(){
         Random=Math.floor(Math.random()*101+19);
-        console.log(Random)
+        console.log(Random);
         $('#randomNumber').text(Random);
         num1= Math.floor(Math.random()*11+1);
         num2= Math.floor(Math.random()*11+1);
@@ -38,7 +38,7 @@ $( document ).ready(function(){
   alert ("You lose!");
     losses++;
     $('#numberLosses').text(losses);
-    reset()
+    reset();
   }
  
     $('#one').on ('click', function(){
@@ -52,7 +52,7 @@ $( document ).ready(function(){
           else if ( userTotal > Random){
             loser();
           }   
-    })  
+    }); 
     $('#two').on ('click', function(){
       userTotal = userTotal + num2;
       console.log("New userTotal= " + userTotal);
@@ -63,7 +63,7 @@ $( document ).ready(function(){
           else if ( userTotal > Random){
             loser();
           } 
-    })  
+    }); 
     $('#three').on ('click', function(){
       userTotal = userTotal + num3;
       console.log("New userTotal= " + userTotal);
@@ -75,7 +75,7 @@ $( document ).ready(function(){
           else if ( userTotal > Random){
             loser();
           } 
-    })  
+    }) ;
     $('#four').on ('click', function(){
       userTotal = userTotal + num4;
       console.log("New userTotal= " + userTotal);
