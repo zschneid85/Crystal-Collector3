@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Crystal-Collector3</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -21,97 +21,77 @@
             <hr class="my-4">
             <h2>The Rules!!!</h2>
             <p>1. You will be given a random number at the start of the game.</p>
-            <p>2. There are four crystal below. By clicking on a crystal you will add a specific amount of points to
-                your
-                total score.
-
-            </p>
+            <p>2. There are four cars below. By clicking on a car you will add a specific amount of points to
+                your total score.</p>
             <p>You win the game by matching your total score to random number,you lose the game if your total score
-                goes
-                above the random number.
-
-            </p>
-            <p>4. The value of each crystal is hidden from you until you click it.
-
-            </p>
-            <p>5. Each time when the game starts,the game will change the values of each crystal.</p>
+                goes above the random number.</p>
+            <p>4. The value of each car is hidden from you until you click it.</p>
+            <p>5. Each time when the game starts,the game will change the values of each car.</p>
         </div>
-            <div class="album py-5 bg-light">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card mb-6 box-shadow">
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
+        <div class="album py-5 bg-light">
+            <div class="container-fluid">
+                <div class="row" class="mt">
+                    <div class="col-md-6">
+                        <div class="card mb-6 box-shadow">
+                            <div class="card-body">
+                                <h2>Wins:
+                                    <span id="numberWins"></span>
+                                    </br>
+                                    Losses:
+                                    <span id="numberLosses"></span>
+                                </h2>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card mb-6 box-shadow">
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-6 box-shadow">
+                            <div class="card-body">
+                                <h2>Random Number:
+                                    <span id="randomNumber"></span>
+                                </h2>
+
                             </div>
                         </div>
-                        <div class="row">
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row" id="mt">
+
                             <div class="col-md-3">
                                 <div class="card mb-3 box-shadow">
-                                    <img src="img/images.jpeg" class="img-rounded" alt="Cinque Terre" width="304"
-                                        height="236">
+                                    <img src="img/images1.jpeg" class="img-rounded" id="one" alt="Car 1" width="100%"
+                                        height="200" class="img-thumbnail">
                                 </div>
                             </div>
 
                             <div class="col-md-3">
                                 <div class="card mb-3 box-shadow">
-                                    <img src="img/images.jpeg" class="img-rounded" alt="Cinque Terre" width="304"
-                                        height="236">
+                                    <img src="img/images2.jpeg" class="img-rounded" id="two" alt="Car 2" width="100%"
+                                        height="200">
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="card mb-3 box-shadow">
-                                    <img src="img/images.jpeg" class="img-rounded" alt="Cinque Terre" width="304"
-                                        height="236">
-
-                                </div>
+                                    <img src="img/images3.jpeg" class="img-rounded" id="three" alt="Car 3" width="100%"
+                                        height="200">
+                                    </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="card mb-3 box-shadow">
-                                    <img src="img/images.jpeg" class="img-rounded" alt="Cinque Terre" width="304"
-                                        height="236">
+                                    <img src="img/images4.jpeg" class="img-rounded" id="four" alt="Car 4" width="100%"
+                                        height="200">
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card mb-6 box-shadow">
                                     <div class="card-body">
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural
-                                            lead-in to additional content. This content is a little bit longer.</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                            </div>
-                                        </div>
+                                        <h2>Your total score is:<span id="finalTotal"></span></h2>
+                                        <a class="btn btn-primary" href="#" role="button">Link</a>
+                                        <input onclick="myFunction()" class="btn btn-primary" type="reset" value=" Game Reset">
                                     </div>
                                 </div>
                             </div>
@@ -119,20 +99,29 @@
                     </div>
                 </div>
             </div>
-        
-    </div>
 
-    
+        </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="game.js"></script>
+        <script>
+            function myFunction() {
+                location.reload();
+            }
+
+        </script>
+
 </body>
 
 </html>
