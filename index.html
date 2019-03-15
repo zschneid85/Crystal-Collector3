@@ -5,10 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-  
-    
-   <!-- Bootstrap CSS -->
+
+
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
@@ -17,86 +17,87 @@
 </head>
 
 <body>
-    
-        <div class=container-fluid>
-            <img src="img/logo.png" id="logo" class="img-fluid" alt="Responsive image">
-            <hr class="my-4">
-            <h2>The Rules!!!</h2>
-            <p>1. You will be given a random number at the start of the game.</p>
-            <p>2. There are four cars below. By clicking on a car you will add a specific amount of points to
-                your total score.</p>
-            <p>You win the game by matching your total score to random number,you lose the game if your total score
-                goes above the random number.</p>
-            <p>4. The value of each car is hidden from you until you click it.</p>
-            <p>5. Each time when the game starts,the game will change the values of each car.</p>
-        </div>
-    
-        <div class="album py-5 bg-light">
-            <div class="container-fluid">
-                <div class="row" class="mt">
-                    <div class="col-md-6">
-                        <div class="card mb-6 box-shadow">
-                            <div class="card-body">
-                                <h2>Wins:
-                                    <span id="numberWins"></span>
-                                    </br>
-                                    Losses:
-                                    <span id="numberLosses"></span>
-                                </h2>
+
+    <div class=container-fluid>
+        <img src="img/logo.png" id="logo" class="img-fluid" alt="Responsive image">
+        <hr class="my-4">
+        <h2>The Rules!!!</h2>
+        <p>1. You will be given a random number at the start of the game.</p>
+        <p>2. There are four cars below. By clicking on a car you will add a specific amount of points to
+            your total score.</p>
+        <p>You win the game by matching your total score to random number,you lose the game if your total score
+            goes above the random number.</p>
+        <p>4. The value of each car is hidden from you until you click it.</p>
+        <p>5. Each time when the game starts,the game will change the values of each car.</p>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container-fluid">
+            <div class="row" class="mt">
+                <div class="col-md-6">
+                    <div class="card mb-6 box-shadow">
+                        <div class="card-body">
+                            <h2>Wins:
+                                <span id="numberWins"></span>
+                                </br>
+                                Losses:
+                                <span id="numberLosses"></span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-6 box-shadow">
+                        <div class="card-body">
+                            <h2>Random Number:
+                                <span id="randomNumber"></span>
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row" id="mt">
+
+                        <div class="col-md-3">
+                            <div class="card mb-3 box-shadow">
+                                <img src="img/images1.jpeg" class="img-rounded" id="one" alt="Car 1" width="100%"
+                                    height="200" class="img-thumbnail">
+                                
+                                </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card mb-3 box-shadow">
+                                <img src="img/images2.jpeg" class="img-rounded" id="two" alt="Car 2" width="100%"
+                                    height="200">
+                            
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3 box-shadow">
+                                <img src="img/images5.jpeg" class="img-rounded" id="three" alt="Car 3" width="100%"
+                                    height="200">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3 box-shadow">
+                                <img src="img/images4.jpeg" class="img-rounded" id="four" alt="Car 4" width="100%"
+                                    height="200">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card mb-6 box-shadow">
-                            <div class="card-body">
-                                <h2>Random Number:
-                                    <span id="randomNumber"></span>
-                                </h2>
+                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row" id="mt">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-6 box-shadow">
+                                <div class="card-body">
+                                    <h2>Your total score is:<span id="finalTotal"></span></h2>
 
-                            <div class="col-md-3">
-                                <div class="card mb-3 box-shadow">
-                                    <img src="img/images1.jpeg" class="img-rounded" id="one" alt="Car 1" width="100%"
-                                        height="200" class="img-thumbnail">
-                                </div>
-                            </div>
+                                    <input onclick="myFunction()" class="btn btn-primary" type="reset" value=" Game Reset">
 
-                            <div class="col-md-3">
-                                <div class="card mb-3 box-shadow">
-                                    <img src="img/images2.jpeg" class="img-rounded" id="two" alt="Car 2" width="100%"
-                                        height="200">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card mb-3 box-shadow">
-                                    <img src="img/images5.jpeg" class="img-rounded" id="three" alt="Car 3" width="100%"
-                                        height="200">
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card mb-3 box-shadow">
-                                    <img src="img/images4.jpeg" class="img-rounded" id="four" alt="Car 4" width="100%"
-                                        height="200">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-6 box-shadow">
-                                    <div class="card-body">
-                                        <h2>Your total score is:<span id="finalTotal"></span></h2>
-                                        
-                                        <input onclick="myFunction()" class="btn btn-primary" type="reset" value=" Game Reset">
-                                    
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -104,26 +105,27 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        
-        
-            <script src="game.js"></script>
-        <script>
-            function myFunction() {
-                location.reload();
-            }
-        </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script src="game.js"></script>
+    <script>
+        function myFunction() {
+            location.reload();
+        }
+    </script>
 </body>
 </html>
